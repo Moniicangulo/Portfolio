@@ -1,0 +1,98 @@
+---
+  const technologies = ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL"];
+---
+  
+
+<section class="experience__container flex__center">
+      <div class="subtitle__container">
+        <h2>Experience</h2>
+        <span class="text__gradient">Where I've honed my skills</span>
+      </div>
+      <div class="info__container">
+        <div class="flex__start">
+          <img src="./images/star.svg" alt="Star">
+          <h3>Developer - Student</h3>
+        </div>
+        <div class="info__experience flex__start">
+          <span>August 2020 - Present</span>
+          <p>
+            I have worked on several school projects where I gained experience
+            using modern technologies. During these projects, I developed
+            logical and communication skills, utilized Agile/Scrum
+            methodologies, and worked on frontend development, databases, and
+            interface design.
+          </p>
+          <div class="technologies flex__center">
+            {technologies.map((tech, index) => (
+              <span class={`technology tech-${index}`}>
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+</section>
+
+<style>
+.experience__container{
+    flex-direction: column;
+    width: 45%;
+}
+.subtitle__container{
+    text-align: center;
+    & h2{
+        font: {
+            size: 3rem;
+            weight: 500;
+        } 
+    }
+}
+.info__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.info__experience{
+    flex-direction: column;
+    &> span{
+        color: var(--second-text);
+    }
+    
+}
+.technologies {
+    gap: 10px;
+
+    & .technology{
+        padding: 0.25rem 0.75rem;
+        border-radius: 1.5rem;
+        color: var(--light-text);
+    }
+    & .tech-0{
+      background-color: #3DDC9740;
+      color: #3DDC97;
+    }
+    & .tech-1{
+      background-color: #004DCF40;
+      color: #004DCF;
+
+    }
+    & .tech-2{
+      background-color: #EAD94C40;
+      color: #EAD94C;
+    }
+    & .tech-3{
+      background-color: #8ED1FC40;
+      color: #8ED1FC;
+    }
+    & .tech-4{
+      background-color: #F5A62340;
+      color: #F5A623;
+    }
+    & .tech-5{
+      background-color: #FF572240;
+      color: #FF5722;
+    }
+    
+  }
+</style>
