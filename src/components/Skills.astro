@@ -1,0 +1,61 @@
+---
+const skills = ["react", "vuejs", "typescript", "vite", "nodejs"];
+const tools = ["vscode", "figma", "github", "vercel"];
+---
+
+<section id="skills" class="container">
+  <div class="skills__container flex__center">
+    <div class="subtitle__container">
+      <h2>Skills</h2>
+    </div>
+    <div>
+      {
+        skills.map((skill) => (
+          <figure>
+            <img src={`./images/${skill}.svg`} alt={skill} />
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+  <div class="tools__Container flex__center">
+    <div class="subtitle__container">
+      <h2>Tools</h2>
+    </div>
+    <div>
+      {
+        tools.map((tool) => (
+          <figure>
+            <img src={`./images/${tool}.svg`} alt={tool} />
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .skills__container,
+  .tools__Container {
+    flex-direction: column;
+    & > div {
+      align-items: center;
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+    }
+    & figure {
+      width: 60px;
+      object-fit: contain;
+      & img {
+        width: 100%;
+        max-height: 60px;
+      }
+    }
+  }
+</style>
