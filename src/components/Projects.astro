@@ -1,0 +1,59 @@
+---
+import CardProject from "./CardProject.astro";
+const projects = [
+  {
+    link: "https://www.avaluosbriseno.com/",
+    img: "./images/briseno-avaluos.png",
+    title: "Briseño Avaluos",
+    description:
+      "Landing page designed in Figma and implemented with plain HTML, CSS, and JavaScript.",
+  },
+  {
+    link: "",
+    img: "./images/Simtec.png",
+    title: "Simtec",
+    description:
+      "Web application for school management, created with Vue and Express.",
+  }
+];
+---
+
+<section class="projects">
+  <div class="subtitle__container">
+    <h2>Projects</h2>
+    <span class="text__gradient">some of my work</span>
+  </div>
+  <div class="projects__container">
+    {
+      projects.map((project) => (
+        <CardProject
+          link={project.link}
+          img={project.img}
+          title={project.title}
+          description={project.description}
+          class="card__project"
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .projects__container {
+      align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 750px;
+  }
+  .card__project {
+    flex: 1 1 45%;
+  }
+</style>
