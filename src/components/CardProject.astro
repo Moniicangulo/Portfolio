@@ -1,0 +1,37 @@
+---
+const { link, img, title, description } = Astro.props;
+---
+
+<article class="card flex__start">
+  <a href={link} target="_blank">
+    <figure>
+      <img src={img} alt={title} />
+    </figure>
+    <h2>{title}</h2>
+    <p>{description}</p>
+  </a>
+</article>
+
+<style>
+  .card {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 350px;
+    & figure {
+      width: 100%;
+      object-fit: contain;
+      & img {
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+    }
+    & p {
+      color: var(--second-text);
+    }
+    transition: all 0.5s linear;
+    &:hover {
+      background-color: #25182f;
+      cursor: pointer;
+    }
+  }
+</style>
