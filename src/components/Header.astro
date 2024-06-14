@@ -1,0 +1,51 @@
+---
+
+---
+
+<header class="header">
+  <div class="flex__center">
+    <figure>
+      <img src="./images/logo-cat.svg" alt="cat" />
+    </figure>
+    <span>Moniicangulo</span>
+  </div>
+  <nav class="flex__center">
+    <a href="">Home</a>
+    <a href="">Project</a>
+    <a href="">Experience</a>
+    <a href="">About me</a>
+    <a href="">Skills</a>
+    <a href="">Contact</a>
+  </nav>
+</header>
+
+<style>
+  .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    & figure {
+      width: 50px;
+      object-fit: contain;
+      & img{
+        width: 100%;
+      }
+    }
+    & nav {
+      gap: 2rem;
+    }
+
+    & a {
+      transition: all 0.5s ease-in-out;
+      outline: none;
+      &:hover {
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+</style>
