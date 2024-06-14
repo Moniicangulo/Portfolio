@@ -1,0 +1,81 @@
+---
+
+---
+
+<section class="flex__center">
+  <div class="info__container flex__center">
+    <span class="name">Monica Angulo</span>
+    <h1 class="title text__gradient">Front-End Developer</h1>
+    <p>
+      As a final semester student of Computer Systems Engineering, with
+      expertise in frontend development and an interest in UX/UI design, I aim
+      to apply my skills and knowledge in a professional environment. My goal is
+      to contribute to the creation of intuitive and visually appealing user
+      interfaces, collaborating with multidisciplinary teams to develop
+      innovative solutions.
+    </p>
+    <div class="link__container flex__center">
+      <img src="./images/github.svg" alt="Logo Github" />
+      <img src="./images/linkedin.svg" alt="Logo Linkedin" />
+    </div>
+    <button class="cv__button flex__center">
+      <img src="./images/file-text.svg" alt="file-text" />
+      Descargar CV
+    </button>
+  </div>
+  <figure class="img__container">
+    <img src="./images/dev_focus.svg" alt="dev_focus" />
+  </figure>
+</section>
+
+<style>
+  .info__container{
+      flex-direction: column;
+      text-align: center;
+      width: 40%;
+      & .name {
+      color: var(--second-text);
+    }
+    & .title {
+      font-size: 3rem;
+    }
+  }
+  .img__container{
+      object-fit: cover;
+      width: 45%;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+  }
+  
+  .link__container {
+    transition: all 0.5s ease-in-out;
+
+    & img:hover {
+      cursor: pointer;
+      filter: brightness(0.8);
+    }
+  }
+  .cv__button {
+    background-color: var(--dark-backround);
+    border-width: 2px;
+    border-style: solid;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    color: var(--light-text);
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    width: 200px;
+
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      border-style: solid;
+      border-width: 2px;
+      border-image: var(--gradient-invert);
+      border-image-slice: 1;
+      cursor: pointer;
+    }
+  }
+</style>
