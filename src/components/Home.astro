@@ -29,6 +29,10 @@
 </section>
 
 <style>
+  #home{
+    margin-top: 8rem;
+    display: flex;
+  }
   .info__container{
       flex-direction: column;
       text-align: center;
@@ -78,4 +82,13 @@
       cursor: pointer;
     }
   }
+
+  @media (max-width: 426px) {
+      #home{
+        flex-direction: column;
+      }
+      .info__container{
+        width: 85%;
+      }
+    }
 </style>
