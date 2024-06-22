@@ -1,5 +1,5 @@
 ---
-const skills = ["react", "vuejs", "typescript", "vite", "nodejs"];
+const skills = ["react", "vuejs", "typescript", "vite", "nodejs", "sass"];
 const tools = ["vscode", "figma", "github", "vercel"];
 ---
 
@@ -12,7 +12,7 @@ const tools = ["vscode", "figma", "github", "vercel"];
       {
         skills.map((skill) => (
           <figure>
-            <img src={`./images/${skill}.svg`} alt={skill} />
+            <img src={`./images/${skill}.svg`} alt={skill} title={skill}/>
           </figure>
         ))
       }
@@ -26,7 +26,7 @@ const tools = ["vscode", "figma", "github", "vercel"];
       {
         tools.map((tool) => (
           <figure>
-            <img src={`./images/${tool}.svg`} alt={tool} />
+            <img src={`./images/${tool}.svg`} alt={tool} title={tool} />
           </figure>
         ))
       }
@@ -38,7 +38,10 @@ const tools = ["vscode", "figma", "github", "vercel"];
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 4rem;
+    
+
   }
   .skills__container,
   .tools__Container {
@@ -46,6 +49,7 @@ const tools = ["vscode", "figma", "github", "vercel"];
     & > div {
       align-items: center;
       display: flex;
+      flex-wrap: wrap;
       gap: 3rem;
       justify-content: center;
     }
@@ -55,6 +59,16 @@ const tools = ["vscode", "figma", "github", "vercel"];
       & img {
         width: 100%;
         max-height: 60px;
+      }
+    }
+  }
+  @media (max-width: 426px) {
+    .skills__container,
+    .tools__Container{
+      gap: 1rem;
+      width: 85%;
+      & figure{
+        width: 45px;
       }
     }
   }
