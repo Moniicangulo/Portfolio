@@ -15,7 +15,7 @@
     <a href="#experience">Experience</a>
     <a href="#aboutme">About me</a>
     <a href="#skills">Skills</a>
-    <a href="">Contact</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -23,14 +23,17 @@
   .header {
     align-items: center;
     display: flex;
+    background-color: var(--dark-backround);
     justify-content: space-between;
     padding: 1rem 2rem;
-    width: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
 
     & figure {
       width: 50px;
       object-fit: contain;
-      & img{
+      & img {
         width: 100%;
       }
     }
@@ -39,12 +42,31 @@
     }
 
     & a {
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in;
       outline: none;
+      border-bottom: 1px transparent;
       &:hover {
-        background: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--mauve);
+        border-bottom: 1px solid var(--mauve);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      & nav {
+        gap: 1rem;
+      }
+    }
+  }
+  @media (max-width: 426px) {
+    .header {
+      justify-content: center;
+      & >div{
+      }
+      
+      & nav {
+        display: none;
       }
     }
   }
