@@ -35,4 +35,10 @@ const { link, img, title, description } = Astro.props;
       cursor: pointer;
     }
   }
+
+  @media max-width(426px) {
+    .card{
+      max-width: 85%;
+    }
+  }
 </style>

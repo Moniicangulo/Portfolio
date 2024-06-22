@@ -26,6 +26,8 @@
 <style>
   .container{
     gap: 5rem;
+    
+
   }
   .img__container{
     width: 40%;
@@ -38,5 +40,18 @@
     text-align: center;
     flex-direction: column;
     width: 40%;
+  }
+  @media (max-width: 426px) {
+    .container{
+      flex-direction: column-reverse;
+      gap: 1rem;
+      width: 85%;
+    }
+    .info__container{
+      width: 85%;
+    }
+    .img__container{
+      width: 65%;
+    }
   }
 </style>

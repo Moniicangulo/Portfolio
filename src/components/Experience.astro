@@ -35,8 +35,10 @@
 
 <style>
 .experience__container{
+    justify-content: center;
     flex-direction: column;
     width: 45%;
+    
 }
 
 .info__container{
@@ -53,6 +55,9 @@
     
 }
 .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
     gap: 10px;
 
     & .technology{
@@ -86,5 +91,10 @@
       color: #FF5722;
     }
     
+  }
+  @media (max-width: 426px) {
+    .experience__container{
+      width: 85%;
+    }
   }
 </style>
