@@ -15,17 +15,18 @@
     <a href="#experience">Experience</a>
     <a href="#aboutme">About me</a>
     <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact">Contact me</a>
   </nav>
 </header>
 
 <style>
   .header {
     align-items: center;
+    color: var(--black);
     display: flex;
-    background-color: var(--dark-backround);
+    background-color: var(--white);
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem var(--padding-desktop);
     width: 100vw;
     position: fixed;
     top: 0;
@@ -42,6 +43,7 @@
     }
 
     & a {
+      color: var(--black);
       transition: all 0.3s ease-in;
       outline: none;
       border-bottom: 1px transparent;
