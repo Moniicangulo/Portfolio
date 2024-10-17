@@ -12,7 +12,9 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "astro": "^4.10.2",
+    "i18next": "^23.16.0",
     "lucide-react": "^0.394.0",
+    "react-i18next": "^15.0.3",
     "typescript": "^5.4.5"
   },
   "devDependencies": {

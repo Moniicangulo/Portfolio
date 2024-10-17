@@ -7,11 +7,11 @@ const languages = {
 };
 
 export const geti18n = ({ currentLocale = 'es' }: { currentLocale: string | undefined }) => {
-  if (currentLocale === languages.english) {
+  if (currentLocale === 'en') {
     return english;
   }
-  if (currentLocale === languages.spanish) {
+  if (currentLocale === 'es') {
     return spanish;
   }
-  return spanish;
+  return spanish; 
 };

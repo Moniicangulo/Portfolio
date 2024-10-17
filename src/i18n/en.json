@@ -1,10 +1,10 @@
 {
     "HEADER": {
-        "HOME": "Inicio",
-        "PROJECTS":"Proyectos",
-        "EXPERIENCE":"Experiencia",
-        "ABOUT_ME":"Sobre mi",
+        "HOME": "Home",
+        "PROJECTS":"Projects",
+        "EXPERIENCE":"Experience",
+        "ABOUT_ME":"About me",
         "SKILLS": "Skills",
-        "CONTACT_ME": "Contactame"
+        "CONTACT_ME": "Contact me"
     }
 }
