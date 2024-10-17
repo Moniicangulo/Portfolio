@@ -1,12 +1,15 @@
 ---
-  const technologies = ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL"];
+import { geti18n } from "../i18n";
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+const technologies = ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL"];
 ---
   
 
 <section id="experience" class="experience__container flex__center">
       <div class="subtitle__container">
-        <h2>Experience</h2>
-        <span class="text__gradient">Where I've honed my skills</span>
+        <h2>{i18n.EXPERIENCE.TITLE}</h2>
+        <span>{i18n.EXPERIENCE.SUBTITLE}</span>
       </div>
       <div class="info__container">
         <div class="flex__start">
@@ -35,10 +38,28 @@
 
 <style>
 .experience__container{
+    background-color: var(--light-green);
     justify-content: center;
     flex-direction: column;
-    width: 45%;
-    
+    width: 100vw;
+  & .subtitle__container{
+    border: 1px solid var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    height: 155px;
+    justify-content: center;
+    width: 925px;
+    gap: 0.75rem;
+    & h2{
+      text-transform: uppercase;
+    }
+    & span{
+      font-size: 1.25rem;
+    }
+  }
 }
 
 .info__container{
