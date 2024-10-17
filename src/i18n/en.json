@@ -6,5 +6,13 @@
         "ABOUT_ME":"About me",
         "SKILLS": "Skills",
         "CONTACT_ME": "Contact me"
+    },
+    "HOME": {
+        "NAME":"Hi I'm Monica",
+        "DEGREE":"Computer Systems Engineer",
+        "DESCRIPTION":"As a final-semester student, I have knowledge in programming logic, databases, and frontend development experience, with an interest in UX/UI design. My goal is to contribute to creating intuitive user interfaces and collaborate with multidisciplinary teams in developing innovative solutions.",
+        "BUTTON_CV":"Download CV",
+        "LINK_TO_GITHUB":"Go to Github"
     }
+
 }

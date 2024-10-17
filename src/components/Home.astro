@@ -1,26 +1,23 @@
 ---
-
+import { geti18n } from "../i18n";
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 ---
 
 <section id="home" class="flex__center">
   <div class="info__container">
-    <span class="name">Hi I'm Monica</span>
+    <span class="name">{i18n.HOME.NAME}</span>
     <div>
-      <h1 class="title">Computer Systems Engineer.</h1>
+      <h1 class="title">{i18n.HOME.DEGREE}</h1>
       <p class="description">
-        As a final semester student of Computer Systems Engineering, with
-        expertise in frontend development and an interest in UX/UI design, I aim
-        to apply my skills and knowledge in a professional environment. My goal
-        is to contribute to the creation of intuitive and visually appealing
-        user interfaces, collaborating with multidisciplinary teams to develop
-        innovative solutions.
+        {i18n.HOME.DESCRIPTION}
       </p>
     </div>
     <div class="link__container">
       <a href="cv-MonicaAngulo.pdf" target="_blank">
-        <button class="cv__button"> Descargar CV </button>
+        <button class="cv__button"> {i18n.HOME.BUTTON_CV} </button>
       </a>
-      <p>Go to GitHub</p>
+      <a href="https://github.com/Moniicangulo" target="_blank" class="link__github">{i18n.HOME.LINK_TO_GITHUB}</a>
     </div>
   </div>
   <figure class="img__container">
@@ -77,8 +74,9 @@
     text-align: center;
     transition: all 0.5s ease-in-out;
 
-    & p{
-      font-weight: 300;;
+    & .link__github{
+      font-weight: 300;
+      color: var(--black);
     }
   }
   .cv__button {
@@ -89,7 +87,8 @@
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     outline: none;
-    width: 130px;
+    text-transform: uppercase;
+    min-width: 130px;
 
     transition: all 0.5s ease-in-out;
     &:hover {
