@@ -1,22 +1,46 @@
 {
-    "HEADER": {
-        "HOME": "Home",
-        "PROJECTS":"Projects",
-        "EXPERIENCE":"Experience",
-        "ABOUT_ME":"About me",
-        "SKILLS": "Skills",
-        "CONTACT_ME": "Contact me"
-    },
-    "HOME": {
-        "NAME":"Hi I'm Monica",
-        "DEGREE":"Computer Systems Engineer",
-        "DESCRIPTION":"As a final-semester student, I have knowledge in programming logic, databases, and frontend development experience, with an interest in UX/UI design. My goal is to contribute to creating intuitive user interfaces and collaborate with multidisciplinary teams in developing innovative solutions.",
-        "BUTTON_CV":"Download CV",
-        "LINK_TO_GITHUB":"Go to Github"
-    },
-    "EXPERIENCE": {
-        "TITLE":"My experience",
-        "SUBTITLE":"Where I've honed my skills"
+  "HEADER": {
+    "HOME": "Home",
+    "PROJECTS": "Projects",
+    "EXPERIENCE": "Experience",
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "CONTACT_ME": "Contact me"
+  },
+  "HOME": {
+    "NAME": "Hi I'm Monica",
+    "DEGREE": "Computer Systems Engineer",
+    "DESCRIPTION": "As a final-semester student, I have knowledge in programming logic, databases, and frontend development experience, with an interest in UX/UI design. My goal is to contribute to creating intuitive user interfaces and collaborate with multidisciplinary teams in developing innovative solutions.",
+    "BUTTON_CV": "Download CV",
+    "LINK_TO_GITHUB": "Go to Github"
+  },
+  "EXPERIENCE": {
+    "TITLE": "My experience",
+    "SUBTITLE": "Where I've honed my skills",
+    "TECHNOLOGIES_TITLE": "Technologies",
+    "JOBS": {
+      "STUDENT": {
+        "JOB": "Student",
+        "COMPANY": "Instituto Tecnologico de Culiacan",
+        "DATE": "August 2020 - Present",
+        "DESCRIPTION": "I have worked on several school projects where I gained experience using modern technologies. During these projects, I developed logical and communication skills, utilized Agile/Scrum methodologies, and worked on frontend development, databases, and interface design.",
+        "TECHNOLOGIES": [
+          "Vue.js",
+          "React",
+          "Javascript",
+          "CSS",
+          "HTML5",
+          "SQL",
+          "Java"
+        ]
+      },
+      "KAMI_TRAINER": {
+        "JOB": "Intership of Frontend",
+        "COMPANY": "Kami Electronics",
+        "DATE": "May 2024 - Present",
+        "DESCRIPTION": "Maintenance, code refactoring, and development of new features for the main web application of Kami Electronics, using Scrum methodology for goals.",
+        "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
+      }
     }
-
+  }
 }

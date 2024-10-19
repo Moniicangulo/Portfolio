@@ -16,6 +16,23 @@
     },
     "EXPERIENCE": {
         "TITLE":"Mi experiencia",
-        "SUBTITLE":"Donde he perfeccionado mis habilidades"
+        "SUBTITLE":"Donde he perfeccionado mis habilidades",
+        "TECHNOLOGIES_TITLE": "Tecnologías",
+        "JOBS": {
+            "STUDENT": {
+                "JOB":"Estudiante",
+                "COMPANY": "Instituto Tecnologico de Culiacán",
+                "DATE": "Agosto 2020 - Presente",
+                "DESCRIPTION": "He trabajado en varios proyectos escolares donde adquirí experiencia utilizando tecnologías modernas. Durante estos proyectos, desarrollé habilidades lógicas y de comunicación, utilicé metodologías Agile/Scrum y trabajé en desarrollo frontend, bases de datos y diseño de interfaces.",
+                "TECHNOLOGIES": ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL", "Java"]
+            },
+            "KAMI_TRAINER": {
+                "JOB":"Practicante Frontend",
+                "COMPANY": "Kami Electronics",
+                "DATE": "Mayo 2024 - Presente",
+                "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
+                "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
+            }
+        }
     }
 }
