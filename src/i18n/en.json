@@ -42,5 +42,29 @@
         "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
       }
     }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "SUBTITLE": "algunos de mis trabajos",
+    "PROJECTS": {
+      "BA": {
+        "TITLE": "Briseño Avalúos",
+        "DESCRIPTTION": "Página de aterrizaje diseñada en Figma e implementada con HTML, CSS y JavaScript puro.",
+        "LINK": "https://www.avaluosbriseno.com/",
+        "IMAGE": "./images/briseno-avaluos.png"
+      },
+      "SIMTEC": {
+        "TITLE": "SIMTEC",
+        "DESCRIPTTION": "Aplicación web para la gestión escolar, creada con Vue y Express.",
+        "LINK": "https://github.com/AlanMezaV/simtec",
+        "IMAGE": "./images/Simtec.png"
+      },
+      "ALURAGEEK": {
+        "TITLE": "AluraGeek",
+        "DESCRIPTTION": "Esta es una simple aplicación React para la gestión de productos, que permite agregar, mostrar y eliminar productos.",
+        "LINK": "https://github.com/Moniicangulo/alura-geek",
+        "IMAGE": "./images/alurageek.png"
+      }
+    }
   }
 }
