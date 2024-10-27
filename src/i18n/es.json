@@ -58,5 +58,14 @@
                 "IMAGE": "./images/alurageek.png"
             }
         }
+    },
+    "ABOUT_ME": {
+      "TITLE": "About me",
+      "SUBTITLE": "A little piece of me",
+      "DESCRIPTTION": "I have experience in frontend software development and a strong interest in UX/UI design. My goal is to apply my skills in a professional environment to contribute to the creation of intuitive and visually appealing interfaces, always aiming to develop innovative solutions. I enjoy collaborating in teams and am motivated by the challenge of enhancing user experience through design and technology. Additionally, I like to hang out with friends, enjoy coffee, and listen to music."
+    },
+    "SKILLS": {
+        "SKILLS" : "Skills",
+        "TOOLS": "Tools"
     }
 }
