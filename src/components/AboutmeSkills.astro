@@ -1,0 +1,72 @@
+---
+import Skills from "./Skills.astro";
+import Aboutme from "./Aboutme.astro";
+---
+
+<section class="container">
+    <Aboutme />
+    <Skills />
+
+    <img src="/public/images/img-extras/disco-ball.png" alt="" class="disco-ball img-extras">
+    <img src="/public/images/img-extras/star-1.png" alt="" class="star-1 img-extras">
+    <img src="/public/images/img-extras/star-2.png" alt="" class="star-2 img-extras">
+    <img src="/public/images/img-extras/stars.png" alt="" class="stars img-extras">
+    <img src="/public/images/img-extras/glass.png" alt="" class="glass img-extras">
+    <img src="/public/images/img-extras/heart.png" alt="" class="heart img-extras">
+    <img src="/public/images/img-extras/lips.png" alt="" class="lips img-extras">
+
+    
+</section>
+
+<style>
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-image: url(/public/images/bg-aboutme.png);
+        width: 100vw;
+        padding: 8rem;
+        position: relative;
+    }
+    .img-extras {
+    position: absolute;
+    transition: transform 0.5s ease-out;
+  }
+  .heart {
+    width: 180px;
+    top: 20px;
+    left: 120px;
+  }
+  .lips{
+    width: 200px;
+    bottom: 30px;
+    left: 60px;
+    transform: rotate(-14.63deg);
+  }
+  .star-1{
+    width: 300px;
+    top: 20px;
+    left: 580px;
+  }
+  .star-2{
+    width: 240px;
+    top: 550px;
+    left: 670px;
+  }
+  .stars{
+    width: 450px;
+    bottom: 80px;
+    left: 320px;
+  }
+  .disco-ball{
+    width: 220px;
+    top: 50px;
+    right: 50px;
+  }
+  .glass{
+    width: 315px;
+    bottom: 80px;
+    right: 90px;
+  }
+
+</style>
