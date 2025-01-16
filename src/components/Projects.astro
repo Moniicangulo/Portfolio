@@ -1,39 +1,30 @@
 ---
 import CardProject from "./CardProject.astro";
-const projects = [
-  {
-    link: "https://www.avaluosbriseno.com/",
-    img: "./images/briseno-avaluos.png",
-    title: "Briseño Avaluos",
-    description:
-      "Landing page designed in Figma and implemented with plain HTML, CSS, and JavaScript.",
-  },
-  {
-    link: "",
-    img: "./images/Simtec.png",
-    title: "Simtec",
-    description:
-      "Web application for school management, created with Vue and Express.",
-  }
-];
+import { geti18n } from "../i18n";
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+const { TITLE, SUBTITLE } = i18n.PROJECTS;
 ---
 
 <section id="projects" class="projects">
+  <img src="/public/images/bg-curve.svg" alt="bg-curve" class="bg" />
   <div class="subtitle__container">
-    <h2>Projects</h2>
-    <span class="text__gradient">some of my work</span>
+    <h2>{TITLE}</h2>
+    <span>{SUBTITLE}</span>
   </div>
   <div class="projects__container">
     {
-      projects.map((project) => (
-        <CardProject
-          link={project.link}
-          img={project.img}
-          title={project.title}
-          description={project.description}
-          class="card__project"
-        />
-      ))
+      Object.entries(i18n.PROJECTS.PROJECTS).map(([key, project]) =>{
+        return(
+          <CardProject
+            title = {project.TITLE}
+            description = {project.DESCRIPTTION}
+            link = {project.LINK}
+            img = {project.IMAGE}
+          />
+        )
+      } )
+
     }
   </div>
 </section>
@@ -43,22 +34,40 @@ const projects = [
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    
+    gap: 4rem;
+    width: 100vw;
+    background-color: var(--bg-projects);
+    padding-bottom: 8rem;
   }
   .projects__container {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-between;
-    width: 750px;
+    justify-content: center;
+    max-width: 1300px;
+  }
+  .subtitle__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    & h2 {
+      font-family: "Concert One", sans-serif;
+      color: var(--indigo);
+      text-transform: uppercase;
+    }
+    & span {
+      color: var(--dark--slate-gray);
+    }
   }
   .card__project {
     flex: 1 1 45%;
   }
+  .bg {
+    width: 100vw;
+  }
   @media (max-width: 426px) {
-    .projects__container{
+    .projects__container {
       width: 400px;
       justify-content: center;
     }

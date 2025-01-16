@@ -1,0 +1,76 @@
+{
+    "HEADER": {
+        "HOME": "Inicio",
+        "PROJECTS":"Proyectos",
+        "EXPERIENCE":"Experiencia",
+        "ABOUT_ME":"Sobre mi",
+        "SKILLS": "Skills",
+        "CONTACT_ME": "Contáctame"
+    },
+    "HOME": {
+        "NAME":"Hola, soy Monica",
+        "DEGREE":"Ing. en Sistemas Computacionales",
+        "DESCRIPTION":"Como estudiante de último semestre, tengo conocimientos en lógica de programación, bases de datos y experiencia en desarrollo frontend, con interés en el diseño UX/UI. Mi objetivo es contribuir a la creación de interfaces de usuario intuitivas y colaborar con equipos multidisciplinarios en el desarrollo de soluciones innovadoras.",
+        "BUTTON_CV":"Ver CV",
+        "LINK_TO_GITHUB":"Ir a GitHub"
+    },
+    "EXPERIENCE": {
+        "TITLE":"Mi experiencia",
+        "SUBTITLE":"Donde he perfeccionado mis habilidades",
+        "TECHNOLOGIES_TITLE": "Tecnologías",
+        "JOBS": {
+            "STUDENT": {
+                "JOB":"Estudiante",
+                "COMPANY": "Instituto Tecnologico de Culiacán",
+                "DATE": "Agosto 2020 - Diciembre 2024",
+                "DESCRIPTION": "He trabajado en varios proyectos escolares donde adquirí experiencia utilizando tecnologías modernas. Durante estos proyectos, desarrollé habilidades lógicas y de comunicación, utilicé metodologías Agile/Scrum y trabajé en desarrollo frontend, bases de datos y diseño de interfaces.",
+                "TECHNOLOGIES": ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL", "Java","Ruby on Rails"]
+            },
+            "KAMI_TRAINER": {
+                "JOB":"Practicante Frontend",
+                "COMPANY": "Kami Electronics",
+                "DATE": "Mayo 2024 - Octubre 2024",
+                "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
+                "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
+            }
+        }
+    },
+    "PROJECTS": {
+        "TITLE": "Projects",
+        "SUBTITLE": "Some of my work", 
+        "PROJECTS": {
+            "BA": {
+                "TITLE": "Briseño Avaluos",
+                "DESCRIPTTION": "Landing page designed in Figma and implemented with plain HTML, CSS, and JavaScript.",
+                "LINK": "https://www.avaluosbriseno.com/",
+                "IMAGE": "./images/projects/briseno-avaluos.png"
+            },
+            "SIMTEC": {
+                "TITLE": "SIMTEC",
+                "DESCRIPTTION": "Web application for school management, created with Vue and Express.",
+                "LINK": "https://github.com/AlanMezaV/simtec",
+                "IMAGE": "./images/projects/Simtec.png"
+            }, "MANGODB": {
+                "TITLE": "MangoDB",
+                "DESCRIPTTION": "Final Project, a web application for managing the harvests of an agricultural company. Developed in Ruby on Rails, using MVC, PostgreSQL, and SCSS.",
+                "LINK": "",
+                "IMAGE": "./images/projects/mangodb.jpg"
+            },
+            "ALURAGEEK": {
+                "TITLE": "AluraGeek",
+                "DESCRIPTTION": "This is a simple React application for managing products, allowing you to add, display, and delete products.",
+                "LINK": "https://github.com/Moniicangulo/alura-geek",
+                "IMAGE": "./images/projects/alurageek.png"
+            }
+        }
+    },
+    "ABOUT_ME": {
+      "TITLE": "About me",
+      "SUBTITLE": "A little piece of me",
+      "DESCRIPTTION": "I have experience in frontend software development and a strong interest in UX/UI design. My goal is to apply my skills in a professional environment to contribute to the creation of intuitive and visually appealing interfaces, always aiming to develop innovative solutions. I enjoy collaborating in teams and am motivated by the challenge of enhancing user experience through design and technology. Additionally, I like to hang out with friends, enjoy coffee, and listen to music."
+    },
+    "SKILLS": {
+        "SKILLS" : "Skills",
+        "TOOLS": "Tools"
+    }
+}

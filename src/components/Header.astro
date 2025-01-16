@@ -1,5 +1,7 @@
 ---
-
+import { geti18n } from "../i18n";
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 ---
 
 <header class="header">
@@ -10,26 +12,27 @@
     <span>Moniicangulo</span>
   </div>
   <nav class="flex__center">
-    <a href="#home">Home</a>
-    <a href="#projects">Project</a>
-    <a href="#experience">Experience</a>
-    <a href="#aboutme">About me</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <a href="#home">{i18n.HEADER.HOME}</a>
+    <a href="#projects">{i18n.HEADER.PROJECTS}</a>
+    <a href="#experience">{i18n.HEADER.EXPERIENCE}</a>
+    <a href="#aboutme">{i18n.HEADER.ABOUT_ME}</a>
+    <a href="#skills">{i18n.HEADER.SKILLS}</a>
+    <a href="#contact">{i18n.HEADER.CONTACT_ME}</a>
   </nav>
 </header>
 
 <style>
   .header {
     align-items: center;
+    color: var(--black);
     display: flex;
-    background-color: var(--dark-backround);
+    background-color: var(--white);
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem var(--padding-desktop);
     width: 100vw;
     position: fixed;
     top: 0;
-
+    z-index: 5;
     & figure {
       width: 50px;
       object-fit: contain;
@@ -42,6 +45,7 @@
     }
 
     & a {
+      color: var(--black);
       transition: all 0.3s ease-in;
       outline: none;
       border-bottom: 1px transparent;

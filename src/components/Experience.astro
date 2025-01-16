@@ -1,100 +1,185 @@
 ---
-  const technologies = ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL"];
+import { geti18n } from "../i18n";
+import CardExperience from "./CardExperience.astro";
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
 ---
-  
 
 <section id="experience" class="experience__container flex__center">
-      <div class="subtitle__container">
-        <h2>Experience</h2>
-        <span class="text__gradient">Where I've honed my skills</span>
-      </div>
-      <div class="info__container">
-        <div class="flex__start">
-          <img src="./images/star.svg" alt="Star">
-          <h3>Developer - Student</h3>
-        </div>
-        <div class="info__experience flex__start">
-          <span>August 2020 - Present</span>
-          <p>
-            I have worked on several school projects where I gained experience
-            using modern technologies. During these projects, I developed
-            logical and communication skills, utilized Agile/Scrum
-            methodologies, and worked on frontend development, databases, and
-            interface design.
-          </p>
-          <div class="technologies flex__center">
-            {technologies.map((tech, index) => (
-              <span class={`technology tech-${index}`}>
-                {tech}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
+  <div class="subtitle__container">
+    <h2>{TITLE}</h2>
+    <span>{SUBTITLE}</span>
+  </div>
+  <div class="info__container">
+    <div class="center-line"></div>
+    {
+      Object.entries(i18n.EXPERIENCE.JOBS).map(([key, job]) => {
+        return (
+          <CardExperience
+            job={job.JOB}
+            company={job.COMPANY}
+            date={job.DATE}
+            description={job.DESCRIPTION}
+            technologies={job.TECHNOLOGIES}
+          />
+        );
+      })
+    }
+  </div>
+
+  <img
+    src="/public/images/img-extras/flower-1.png"
+    alt="flower"
+    class="img-extras flower-1"
+  />
+  <img
+    src="/public/images/img-extras/flower-2.png"
+    alt="flower"
+    class="img-extras flower-2"
+  />
+  <img
+    src="/public/images/img-extras/flower-3.png"
+    alt="flower"
+    class="img-extras flower-3"
+  />
+  <img
+    src="/public/images/img-extras/leaf-1.png"
+    alt="leaf"
+    class="img-extras leaf-1"
+  />
+  <img
+    src="/public/images/img-extras/leaf-2.png"
+    alt="leaf"
+    class="img-extras leaf-2"
+  />
+  <img
+    src="/public/images/img-extras/leaf-3.png"
+    alt="leaf"
+    class="img-extras leaf-3"
+  />
 </section>
+<script>
+  document.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+
+    const flower1 = document.querySelector(".flower-1") as HTMLElement;
+    const flower2 = document.querySelector(".flower-2") as HTMLElement;
+    const flower3 = document.querySelector(".flower-3") as HTMLElement;
+    const leaf1 = document.querySelector(".leaf-1") as HTMLElement;
+    const leaf2 = document.querySelector(".leaf-2") as HTMLElement;
+    const leaf3 = document.querySelector(".leaf-3") as HTMLElement;
+
+    if (flower1)
+      flower1.style.transform = `translateY(${scrollPosition * 0.1}px)`;
+    if (flower2)
+      flower2.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+    if (flower3)
+      flower3.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+    if (leaf1)
+      leaf1.style.transform = `translateY(${scrollPosition * 0.15}px) rotate(5.89deg)`;
+    if (leaf2)
+      leaf2.style.transform = `translateY(${scrollPosition * 0.25}px) rotate(-135.5deg)`;
+    if (leaf3)
+      leaf3.style.transform = `translateY(${scrollPosition * 0.1}px) rotate(-31deg)`;
+  });
+</script>
 
 <style>
-.experience__container{
-    justify-content: center;
-    flex-direction: column;
-    width: 45%;
-    
-}
+  .experience__container {
+  background-color: var(--light-green);
+  padding: 8rem;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
 
-.info__container{
+  & .subtitle__container {
+    border: 1px solid var(--black);
+    color: var(--white);
     display: flex;
     flex-direction: column;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    height: 155px;
+    justify-content: center;
+    width: 925px;
+    gap: 0.75rem;
+    & h2 {
+      text-transform: uppercase;
+    }
+    & span {
+      font-size: 1.25rem;
+    }
+  }
+
+  .info__container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-
+    position: relative;
+  }
+  
+  .info__container .card__job:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
-.info__experience{
+
+.center-line {
+  position: absolute; 
+  overflow: hidden;
+  top: 0;
+  left: 50%; 
+  height: 100%; 
+  border: 2px solid var(--dark-green);
+  transform: translateX(-50%);
+}
+
+  .info__container {
+    display: flex;
     flex-direction: column;
-    &> span{
-        color: var(--second-text);
-    }
-    
-}
-.technologies {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-    gap: 10px;
-
-    & .technology{
-        padding: 0.25rem 0.75rem;
-        border-radius: 1.5rem;
-        color: var(--light-text);
-    }
-    & .tech-0{
-      background-color: #3DDC9740;
-      color: #3DDC97;
-    }
-    & .tech-1{
-      background-color: #004DCF40;
-      color: #004DCF;
-
-    }
-    & .tech-2{
-      background-color: #EAD94C40;
-      color: #EAD94C;
-    }
-    & .tech-3{
-      background-color: #8ED1FC40;
-      color: #8ED1FC;
-    }
-    & .tech-4{
-      background-color: #F5A62340;
-      color: #F5A623;
-    }
-    & .tech-5{
-      background-color: #FF572240;
-      color: #FF5722;
-    }
-    
   }
   @media (max-width: 426px) {
-    .experience__container{
+    .experience__container {
       width: 85%;
     }
+  }
+
+  .img-extras {
+    position: absolute;
+    transition: transform 0.5s ease-out;
+    will-change: transform;
+  }
+  .flower-1 {
+    left: -130px;
+    top: 150px;
+    width: 325px;
+  }
+  .flower-2 {
+    right: 150px;
+    top: 950px;
+    width: 280px;
+  }
+  .flower-3 {
+    right: 50px;
+    top: 1450px;
+    width: 180px;
+  }
+  .leaf-1 {
+    left: 60px;
+    top: 650px;
+    width: 175px;
+  }
+  .leaf-2 {
+    left: 300px;
+    top: 1500px;
+    width: 150px;
+  }
+  .leaf-3 {
+    right: -30px;
+    top: 400px;
+    width: 250px;
   }
 </style>
