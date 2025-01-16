@@ -11,7 +11,7 @@
         "NAME":"Hola, soy Monica",
         "DEGREE":"Ing. en Sistemas Computacionales",
         "DESCRIPTION":"Como estudiante de último semestre, tengo conocimientos en lógica de programación, bases de datos y experiencia en desarrollo frontend, con interés en el diseño UX/UI. Mi objetivo es contribuir a la creación de interfaces de usuario intuitivas y colaborar con equipos multidisciplinarios en el desarrollo de soluciones innovadoras.",
-        "BUTTON_CV":"Descargar CV",
+        "BUTTON_CV":"Ver CV",
         "LINK_TO_GITHUB":"Ir a GitHub"
     },
     "EXPERIENCE": {
