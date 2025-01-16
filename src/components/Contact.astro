@@ -2,12 +2,13 @@
 
 ---
 
-<section class="container">
-  <article id="contact" class="contact__container">
-    <div class="subtitle__container">
-      <h2>Contact</h2>
-    </div>
-    <div class="contact">
+<section id="contact" class="container">
+  <h2>Contact me</h2>
+  <article  class="contact__container">
+    
+      <p>Monnicangulo</p>
+      <div class="square-green"></div>
+      <div class="square-pink"> </div>
       <div>
         <a href="mailto:angulosmonica@gmail.com">
           <img src="./images/email.svg" alt="icon email" />
@@ -18,17 +19,13 @@
           <p>Linkedin Profile</p>
         </a>
       </div>
-      <figure>
-        <img src="./images/personal_file.svg" alt="" />
-      </figure>
-    </div>
   </article>
-  <article class="project__details">
+  <footer class="project__details">
     <p>
       Designed in Figma, developed with Astro, with illustrations from
       undraw.co, and hosted on Vercel.
     </p>
-  </article>
+  </footer>
 </section>
 
 <style>
@@ -37,15 +34,29 @@
     flex-direction: column;
     align-items: center;
     flex-direction: column;
-    gap: 7rem;
+    gap: 4rem;
     margin-bottom: 1rem;
-    width: 85%
+    width: 100vw;
+    background-color: var(--light-purple);
+    padding: 4rem 0rem 2rem 0rem;
+
+    & h2{
+      font-family: "Concert One", sans-serif;
+      font-weight: 400;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+  }
+
+  .square-pink{
+
   }
   .contact__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+   
   }
+
   .contact {
     display: flex;
     align-items: center;
