@@ -22,14 +22,14 @@
             "STUDENT": {
                 "JOB":"Estudiante",
                 "COMPANY": "Instituto Tecnologico de Culiacán",
-                "DATE": "Agosto 2020 - Presente",
+                "DATE": "Agosto 2020 - Diciembre 2024",
                 "DESCRIPTION": "He trabajado en varios proyectos escolares donde adquirí experiencia utilizando tecnologías modernas. Durante estos proyectos, desarrollé habilidades lógicas y de comunicación, utilicé metodologías Agile/Scrum y trabajé en desarrollo frontend, bases de datos y diseño de interfaces.",
-                "TECHNOLOGIES": ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL", "Java"]
+                "TECHNOLOGIES": ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL", "Java","Ruby on Rails"]
             },
             "KAMI_TRAINER": {
                 "JOB":"Practicante Frontend",
                 "COMPANY": "Kami Electronics",
-                "DATE": "Mayo 2024 - Presente",
+                "DATE": "Mayo 2024 - Octubre 2024",
                 "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
                 "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
             }
@@ -43,19 +43,24 @@
                 "TITLE": "Briseño Avaluos",
                 "DESCRIPTTION": "Landing page designed in Figma and implemented with plain HTML, CSS, and JavaScript.",
                 "LINK": "https://www.avaluosbriseno.com/",
-                "IMAGE": "./images/briseno-avaluos.png"
+                "IMAGE": "./images/projects/briseno-avaluos.png"
             },
             "SIMTEC": {
                 "TITLE": "SIMTEC",
                 "DESCRIPTTION": "Web application for school management, created with Vue and Express.",
                 "LINK": "https://github.com/AlanMezaV/simtec",
-                "IMAGE": "./images/Simtec.png"
+                "IMAGE": "./images/projects/Simtec.png"
+            }, "MANGODB": {
+                "TITLE": "MangoDB",
+                "DESCRIPTTION": "Final Project, a web application for managing the harvests of an agricultural company. Developed in Ruby on Rails, using MVC, PostgreSQL, and SCSS.",
+                "LINK": "",
+                "IMAGE": "./images/projects/mangodb.jpg"
             },
             "ALURAGEEK": {
                 "TITLE": "AluraGeek",
-                "DESCRIPTTION": "his is a simple React application for managing products, allowing you to add, display, and delete products.",
+                "DESCRIPTTION": "This is a simple React application for managing products, allowing you to add, display, and delete products.",
                 "LINK": "https://github.com/Moniicangulo/alura-geek",
-                "IMAGE": "./images/alurageek.png"
+                "IMAGE": "./images/projects/alurageek.png"
             }
         }
     },
