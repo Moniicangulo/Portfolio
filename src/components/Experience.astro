@@ -12,6 +12,7 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
     <span>{SUBTITLE}</span>
   </div>
   <div class="info__container">
+    <div class="center-line"></div>
     {
       Object.entries(i18n.EXPERIENCE.JOBS).map(([key, job]) => {
         return (
@@ -86,34 +87,55 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
 
 <style>
   .experience__container {
-    background-color: var(--light-green);
-    padding: 8rem;
-    flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
+  background-color: var(--light-green);
+  padding: 8rem;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
 
-    & .subtitle__container {
-      border: 1px solid var(--black);
-      color: var(--white);
-      display: flex;
-      flex-direction: column;
-      font-family: "Concert One", sans-serif;
-      font-weight: 400;
-      height: 155px;
-      justify-content: center;
-      width: 925px;
-      gap: 0.75rem;
-      & h2 {
-        text-transform: uppercase;
-      }
-      & span {
-        font-size: 1.25rem;
-      }
+  & .subtitle__container {
+    border: 1px solid var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    height: 155px;
+    justify-content: center;
+    width: 925px;
+    gap: 0.75rem;
+    & h2 {
+      text-transform: uppercase;
+    }
+    & span {
+      font-size: 1.25rem;
     }
   }
+
+  .info__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .info__container .card__job:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.center-line {
+  position: absolute; 
+  overflow: hidden;
+  top: 0;
+  left: 50%; 
+  height: 100%; 
+  border: 2px solid var(--dark-green);
+  transform: translateX(-50%);
+}
 
   .info__container {
     display: flex;
