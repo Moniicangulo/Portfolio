@@ -3,31 +3,31 @@
     "HOME": "Home",
     "PROJECTS": "Projects",
     "EXPERIENCE": "Experience",
-    "ABOUT_ME": "About me",
+    "ABOUT_ME": "About Me",
     "SKILLS": "Skills",
-    "CONTACT_ME": "Contact me"
+    "CONTACT_ME": "Contact Me"
   },
   "HOME": {
-    "NAME": "Hi I'm Monica",
+    "NAME": "Hi, I'm Monica",
     "DEGREE": "Computer Systems Engineer",
     "DESCRIPTION": "As a final-semester student, I have knowledge in programming logic, databases, and frontend development experience, with an interest in UX/UI design. My goal is to contribute to creating intuitive user interfaces and collaborate with multidisciplinary teams in developing innovative solutions.",
     "BUTTON_CV": "See CV",
     "LINK_TO_GITHUB": "Go to Github"
   },
   "EXPERIENCE": {
-    "TITLE": "My experience",
-    "SUBTITLE": "Where I've honed my skills",
+    "TITLE": "My Experience",
+    "SUBTITLE": "Where I've Honed My Skills",
     "TECHNOLOGIES_TITLE": "Technologies",
     "JOBS": {
       "STUDENT": {
         "JOB": "Student",
-        "COMPANY": "Instituto Tecnologico de Culiacan",
+        "COMPANY": "Instituto Tecnológico de Culiacán",
         "DATE": "August 2020 - December 2024",
         "DESCRIPTION": "I have worked on several school projects where I gained experience using modern technologies. During these projects, I developed logical and communication skills, utilized Agile/Scrum methodologies, and worked on frontend development, databases, and interface design.",
         "TECHNOLOGIES": [
           "Vue.js",
           "React",
-          "Javascript",
+          "JavaScript",
           "CSS",
           "HTML5",
           "SQL",
@@ -36,51 +36,51 @@
         ]
       },
       "KAMI_TRAINER": {
-        "JOB": "Intership of Frontend",
+        "JOB": "Frontend Intern",
         "COMPANY": "Kami Electronics",
         "DATE": "May 2024 - October 2024",
         "DESCRIPTION": "Maintenance, code refactoring, and development of new features for the main web application of Kami Electronics, using Scrum methodology for goals.",
-        "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
+        "TECHNOLOGIES": ["React", "JavaScript", "CSS", "HTML5", "Next.js"]
       }
     }
   },
   "PROJECTS": {
-    "TITLE": "Proyectos",
-    "SUBTITLE": "algunos de mis trabajos",
+    "TITLE": "Projects",
+    "SUBTITLE": "Some of My Work",
     "PROJECTS": {
       "BA": {
         "TITLE": "Briseño Avalúos",
-        "DESCRIPTTION": "Página de aterrizaje diseñada en Figma e implementada con HTML, CSS y JavaScript puro.",
+        "DESCRIPTION": "Landing page designed in Figma and implemented with pure HTML, CSS, and JavaScript.",
         "LINK": "https://www.avaluosbriseno.com/",
         "IMAGE": "./images/projects/briseno-avaluos.png"
       },
       "SIMTEC": {
         "TITLE": "SIMTEC",
-        "DESCRIPTTION": "Aplicación web para la gestión escolar, creada con Vue y Express.",
+        "DESCRIPTION": "Web application for school management, created with Vue and Express.",
         "LINK": "https://github.com/AlanMezaV/simtec",
         "IMAGE": "./images/projects/Simtec.png"
       },
       "MANGODB": {
-          "TITLE": "MangoDB",
-          "DESCRIPTTION": "Proyecto Final, aplicación web para la gestión de cosechas de una agricola. Desarrollada en Ruby on rails, usando MVC, PostgreSQL y SCSS",
-          "LINK": "",
-          "IMAGE": "./images/projects/mangodb.jpg"
+        "TITLE": "MangoDB",
+        "DESCRIPTION": "Final project: a web application for crop management in an agricultural company. Developed in Ruby on Rails, using MVC, PostgreSQL, and SCSS.",
+        "LINK": "",
+        "IMAGE": "./images/projects/mangodb.jpg"
       },
       "ALURAGEEK": {
         "TITLE": "AluraGeek",
-        "DESCRIPTTION": "Esta es una simple aplicación React para la gestión de productos, que permite agregar, mostrar y eliminar productos.",
+        "DESCRIPTION": "This is a simple React application for product management, allowing users to add, display, and delete products.",
         "LINK": "https://github.com/Moniicangulo/alura-geek",
         "IMAGE": "./images/projects/alurageek.png"
       }
     }
   },
   "ABOUT_ME": {
-    "TITLE": "Sobre mí",
-    "SUBTITLE": "Un pequeño fragmento de mí",
-    "DESCRIPTTION": "Tengo experiencia en el desarrollo de software frontend y un gran interés en el diseño UX/UI. Mi objetivo es aplicar mis habilidades en un entorno profesional para contribuir a la creación de interfaces intuitivas y visualmente atractivas, siempre buscando desarrollar soluciones innovadoras. Disfruto colaborar en equipos y me motiva el desafío de mejorar la experiencia del usuario a través del diseño y la tecnología. Además, me gusta pasar tiempo con amigos, disfrutar de un buen café y escuchar música."
+    "TITLE": "About Me",
+    "SUBTITLE": "A Small Fragment About Me",
+    "DESCRIPTION": "I have experience in frontend software development and a strong interest in UX/UI design. My goal is to apply my skills in a professional environment to contribute to creating intuitive and visually appealing interfaces, always striving to develop innovative solutions. I enjoy collaborating in teams and am motivated by the challenge of improving user experiences through design and technology. Additionally, I enjoy spending time with friends, savoring good coffee, and listening to music."
   },
   "SKILLS": {
     "SKILLS": "Skills",
-    "TOOLS": "Herramientas"
+    "TOOLS": "Tools"
   }
 }
