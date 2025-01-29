@@ -60,8 +60,6 @@ const { job, company, date, description, technologies } = Astro.props;
 .card__job:hover .line::after {
   height: 100%; /* Línea crece hacia arriba */
 }
-
-  
   .card__job {
     display: flex;
     width: 800px;
@@ -102,7 +100,7 @@ const { job, company, date, description, technologies } = Astro.props;
     & .description {
       color: var(--dark-green);
     }
-  }
+  
   .info__job__header {
     color: var(--white);
     display: flex;
@@ -138,5 +136,15 @@ const { job, company, date, description, technologies } = Astro.props;
       padding: 0.25rem 0.75rem;
       background-color: var(--tech-green);
     }
+  }
+
+  @media (max-width: 769px) {
+  .card__job {
+    width: 85%;
+    }
+  }
+  .info__job,
+  .technologies {
+    padding: 1.5rem;
   }
 </style>

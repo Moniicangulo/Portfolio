@@ -1,16 +1,19 @@
 ---
+import { geti18n } from "../i18n";
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 
 ---
 
 <section id="contact" class="contact__container">
   <div class="subtitle__container">
-    <h2>Contact me</h2>
+    <h2>{i18n.CONTACT_ME.TITLE}</h2>
   </div>
   <div class="contact">
-    <span class="name">Moniicangulo</span>
+    <span class="name">{i18n.CONTACT_ME.NAME}</span>
     <div class="square__rose">
-      <span>Computer Systems Engineer.</span>
-      <span>Frontend Developer.</span>
+      <span>{i18n.CONTACT_ME.DEGREE}</span>
+      <span>{i18n.CONTACT_ME.PROFILE}</span>
     </div>
     <div class="square__green">
       <pre
@@ -39,15 +42,14 @@
         <p>angulosmonica@gmail.com</p>
       </a>
       <a href="https://www.linkedin.com/in/monica-angulo-sanchez-ab9a3a2a9/">
-        <p>Linkedin Profile</p>
+        <p>{i18n.CONTACT_ME.LINKEDIN}</p>
       </a>
     </div>
   </div>
 
   <footer>
     <p class="project__details">
-      Designed in Figma, developed with Astro, with illustrations from
-      openpeeps.com, textures.com, cosmos.so and hosted on Vercel.
+      {i18n.FOOTER.FOOTER}
     </p>
   </footer>
 </section>
