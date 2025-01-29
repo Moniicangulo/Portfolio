@@ -67,11 +67,23 @@
     },
     "ABOUT_ME": {
         "TITLE": "Sobre mí",
-        "SUBTITLE": "Un pequeño fragmento de mí",
-        "DESCRIPTTION": "Tengo experiencia en desarrollo de software frontend y un gran interés en el diseño UX/UI. Mi objetivo es aplicar mis habilidades en un entorno profesional para contribuir a la creación de interfaces intuitivas y visualmente atractivas, siempre buscando desarrollar soluciones innovadoras. Disfruto colaborar en equipos y me motiva el desafío de mejorar la experiencia del usuario a través del diseño y la tecnología. Además, me gusta pasar tiempo con amigos, disfrutar de un buen café y escuchar música."
+        "SUBTITLE": "Un pequeña parte de mí",
+        "DESCRIPTION": "Tengo experiencia en desarrollo de software frontend y un gran interés en el diseño UX/UI. Mi objetivo es aplicar mis habilidades en un entorno profesional para contribuir a la creación de interfaces intuitivas y visualmente atractivas, siempre buscando desarrollar soluciones innovadoras. Disfruto colaborar en equipos y me motiva el desafío de mejorar la experiencia del usuario a través del diseño y la tecnología. Además, me gusta pasar tiempo con amigos, disfrutar de un buen café y escuchar música."
     },
     "SKILLS": {
         "SKILLS": "Habilidades",
         "TOOLS": "Herramientas"
+    },
+    "CONTACT_ME": {
+        "TITLE": "Contáctame",
+        "NAME": "Moniicangulo",
+        "LINKEDIN": "Perfil de Linkedin",
+        "DEGREE": "Ing. en Sistemas Computacionales.",
+        "PROFILE": "Desarrollada Frontend."
+    },
+    "FOOTER": {
+        "FOOTER": "Diseñado en Figma, desarrollado con Astro, con ilustraciones de openpeeps.com, textures.com, cosmos.so y alojado en Vercel."
+
     }
+
 }

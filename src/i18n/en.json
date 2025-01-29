@@ -82,5 +82,15 @@
   "SKILLS": {
     "SKILLS": "Skills",
     "TOOLS": "Tools"
+  },
+   "CONTACT_ME": {
+    "TITLE": "Contact Me",
+    "NAME": "Moniicangulo",
+    "LINKEDIN": "Linkedin Profile",
+    "DEGREE": "Computer Systems Engineer.",
+    "PROFILE": "Frontend Developer."
+},
+  "FOOTER": {
+    "FOOTER": "Designed in Figma, developed with Astro, with illustrations from openpeeps.com, textures.com, cosmos.so and hosted on Vercel."
   }
 }
