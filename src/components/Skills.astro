@@ -83,12 +83,19 @@ const skills = ["react", "vuejs", "typescript", "vite", "nodejs", "sass", "mongo
     }
   }
   @media (max-width: 426px) {
+    .container {
+      width: 100%;
+    }
     .skills__container,
-    .tools__Container {
+    .tools__container {
+      width: 90%;
       gap: 1rem;
       width: 85%;
+      & h2{
+        font-size: 2rem;
+      }
       & figure {
-        width: 45px;
+        width: 35px;
       }
     }
   }

@@ -107,14 +107,25 @@ const i18n = geti18n({ currentLocale });
   .img__container {
     max-width: 300px;
   }
-  {}
-
+  }
   @media (max-width: 426px) {
     #home {
       flex-direction: column;
     }
     .info__container {
-      width: 85%;
+      text-align: center;
+      width: 100%;
+      & .name {
+        font-size: 2rem;
+      }
+      & .title {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
     }
+    .link__container{
+      justify-content: space-around
+    }
+    
   }
 </style>

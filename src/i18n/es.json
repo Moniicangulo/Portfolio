@@ -1,89 +1,99 @@
 {
-    "HEADER": {
-        "HOME": "Inicio",
-        "PROJECTS": "Proyectos",
-        "EXPERIENCE": "Experiencia",
-        "ABOUT_ME": "Sobre mí",
-        "SKILLS": "Habilidades",
-        "CONTACT_ME": "Contáctame"
-    },
-    "HOME": {
-        "NAME": "Hola, soy Mónica",
-        "DEGREE": "Ing. en Sistemas Computacionales",
-        "DESCRIPTION": "Como estudiante de último semestre, tengo conocimientos en lógica de programación, bases de datos y experiencia en desarrollo frontend, con interés en el diseño UX/UI. Mi objetivo es contribuir a la creación de interfaces de usuario intuitivas y colaborar con equipos multidisciplinarios en el desarrollo de soluciones innovadoras.",
-        "BUTTON_CV": "Ver CV",
-        "LINK_TO_GITHUB": "Ir a GitHub"
-    },
-    "EXPERIENCE": {
-        "TITLE": "Mi experiencia",
-        "SUBTITLE": "Donde he perfeccionado mis habilidades",
-        "TECHNOLOGIES_TITLE": "Tecnologías",
-        "JOBS": {
-            "STUDENT": {
-                "JOB": "Estudiante",
-                "COMPANY": "Instituto Tecnológico de Culiacán",
-                "DATE": "Agosto 2020 - Diciembre 2024",
-                "DESCRIPTION": "He trabajado en varios proyectos escolares donde adquirí experiencia utilizando tecnologías modernas. Durante estos proyectos, desarrollé habilidades lógicas y de comunicación, utilicé metodologías Agile/Scrum y trabajé en desarrollo frontend, bases de datos y diseño de interfaces.",
-                "TECHNOLOGIES": ["Vue.js", "React", "Javascript", "CSS", "HTML5", "SQL", "Java", "Ruby on Rails"]
-            },
-            "KAMI_TRAINER": {
-                "JOB": "Frontend Developer Intern",
-                "COMPANY": "Kami Electronics",
-                "DATE": "Mayo 2024 - Octubre 2024",
-                "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
-                "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js"]
-            }
-        }
-    },
-    "PROJECTS": {
-        "TITLE": "Proyectos",
-        "SUBTITLE": "Algunos de mis trabajos",
-        "PROJECTS": {
-            "BA": {
-                "TITLE": "Briseño Avalúos",
-                "DESCRIPTTION": "Landing Page diseñada en Figma e implementada con HTML, CSS y JavaScript puro.",
-                "LINK": "https://www.avaluosbriseno.com/",
-                "IMAGE": "./images/projects/briseno-avaluos.png"
-            },
-            "SIMTEC": {
-                "TITLE": "SIMTEC",
-                "DESCRIPTTION": "Aplicación web para la gestión escolar, creada con Vue y Express.",
-                "LINK": "https://github.com/AlanMezaV/simtec",
-                "IMAGE": "./images/projects/Simtec.png"
-            },
-            "MANGODB": {
-                "TITLE": "MangoDB",
-                "DESCRIPTTION": "Proyecto final, una aplicación web para gestionar las cosechas de una empresa agrícola. Desarrollada en Ruby on Rails, utilizando MVC, PostgreSQL y SCSS.",
-                "LINK": "",
-                "IMAGE": "./images/projects/mangodb.jpg"
-            },
-            "ALURAGEEK": {
-                "TITLE": "AluraGeek",
-                "DESCRIPTTION": "Esta es una aplicación sencilla de React para la gestión de productos, que permite agregar, mostrar y eliminar productos.",
-                "LINK": "https://github.com/Moniicangulo/alura-geek",
-                "IMAGE": "./images/projects/alurageek.png"
-            }
-        }
-    },
-    "ABOUT_ME": {
-        "TITLE": "Sobre mí",
-        "SUBTITLE": "Un pequeña parte de mí",
-        "DESCRIPTION": "Tengo experiencia en desarrollo de software frontend y un gran interés en el diseño UX/UI. Mi objetivo es aplicar mis habilidades en un entorno profesional para contribuir a la creación de interfaces intuitivas y visualmente atractivas, siempre buscando desarrollar soluciones innovadoras. Disfruto colaborar en equipos y me motiva el desafío de mejorar la experiencia del usuario a través del diseño y la tecnología. Además, me gusta pasar tiempo con amigos, disfrutar de un buen café y escuchar música."
-    },
-    "SKILLS": {
-        "SKILLS": "Habilidades",
-        "TOOLS": "Herramientas"
-    },
-    "CONTACT_ME": {
-        "TITLE": "Contáctame",
-        "NAME": "Moniicangulo",
-        "LINKEDIN": "Perfil de Linkedin",
-        "DEGREE": "Ing. en Sistemas Computacionales.",
-        "PROFILE": "Desarrollada Frontend."
-    },
-    "FOOTER": {
-        "FOOTER": "Diseñado en Figma, desarrollado con Astro, con ilustraciones de openpeeps.com, textures.com, cosmos.so y alojado en Vercel."
-
+  "HEADER": {
+    "HOME": "Inicio",
+    "PROJECTS": "Proyectos",
+    "EXPERIENCE": "Experiencia",
+    "ABOUT_ME": "Sobre mí",
+    "SKILLS": "Habilidades",
+    "CONTACT_ME": "Contáctame"
+  },
+  "HOME": {
+    "NAME": "Hola, soy Mónica",
+    "DEGREE": "Ing. en Sistemas Computacionales",
+    "DESCRIPTION": "Como ingeniera en sistemas computacionales, tengo conocimientos en lógica de programación, bases de datos y experiencia en desarrollo frontend. Me interesa el diseño UX/UI y mi objetivo es contribuir a la creación de interfaces intuitivas, colaborando con equipos multidisciplinarios para desarrollar soluciones innovadoras.",
+    "BUTTON_CV": "Ver CV",
+    "LINK_TO_GITHUB": "Ir a GitHub"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Mi experiencia",
+    "SUBTITLE": "Donde he perfeccionado mis habilidades",
+    "TECHNOLOGIES_TITLE": "Tecnologías",
+    "JOBS": {
+      "STUDENT": {
+        "JOB": "Estudiante",
+        "COMPANY": "Instituto Tecnológico de Culiacán",
+        "DATE": "Agosto 2020 - Diciembre 2024",
+        "DESCRIPTION": "He trabajado en varios proyectos escolares donde adquirí experiencia utilizando tecnologías modernas. Durante estos proyectos, desarrollé habilidades lógicas y de comunicación, utilicé metodologías Agile/Scrum y trabajé en desarrollo frontend, bases de datos y diseño de interfaces.",
+        "TECHNOLOGIES": [
+          "SQL",
+          "Java",
+          "Vue.js",
+          "React",
+          "Javascript",
+          "CSS",
+          "HTML5",
+          "Ruby on Rails"
+        ]
+      },
+      "KAMI_TRAINER": {
+        "JOB": "Frontend Developer Intern",
+        "COMPANY": "Kami Electronics",
+        "DATE": "Mayo 2024 - Octubre 2024",
+        "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
+        "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js",
+          "Node.js",
+          "MongoDB",
+          "Docker"]
+      }
     }
-
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "SUBTITLE": "Algunos de mis trabajos",
+    "PROJECTS": {
+      "BA": {
+        "TITLE": "Briseño Avalúos",
+        "DESCRIPTTION": "Landing Page diseñada en Figma e implementada con HTML, CSS y JavaScript puro.",
+        "LINK": "https://www.avaluosbriseno.com/",
+        "IMAGE": "./images/projects/briseno-avaluos.png"
+      },
+      "SIMTEC": {
+        "TITLE": "SIMTEC",
+        "DESCRIPTTION": "Aplicación web para la gestión escolar, creada con Vue y Express.",
+        "LINK": "https://github.com/AlanMezaV/simtec",
+        "IMAGE": "./images/projects/Simtec.png"
+      },
+      "MANGODB": {
+        "TITLE": "MangoDB",
+        "DESCRIPTTION": "Proyecto final, una aplicación web para gestionar las cosechas de una empresa agrícola. Desarrollada en Ruby on Rails, utilizando MVC, PostgreSQL y SCSS.",
+        "LINK": "",
+        "IMAGE": "./images/projects/mangodb.jpg"
+      },
+      "ALURAGEEK": {
+        "TITLE": "AluraGeek",
+        "DESCRIPTTION": "Esta es una aplicación sencilla de React para la gestión de productos, que permite agregar, mostrar y eliminar productos.",
+        "LINK": "https://github.com/Moniicangulo/alura-geek",
+        "IMAGE": "./images/projects/alurageek.png"
+      }
+    }
+  },
+  "ABOUT_ME": {
+    "TITLE": "Sobre mí",
+    "SUBTITLE": "Un pequeña parte de mí",
+    "DESCRIPTION": "Tengo experiencia en desarrollo de software frontend y un gran interés en el diseño UX/UI. Mi objetivo es aplicar mis habilidades en un entorno profesional para contribuir a la creación de interfaces intuitivas y visualmente atractivas, siempre buscando desarrollar soluciones innovadoras. Disfruto colaborar en equipos y me motiva el desafío de mejorar la experiencia del usuario a través del diseño y la tecnología. Además, me gusta pasar tiempo con amigos, disfrutar de un buen café y escuchar música."
+  },
+  "SKILLS": {
+    "SKILLS": "Habilidades",
+    "TOOLS": "Herramientas"
+  },
+  "CONTACT_ME": {
+    "TITLE": "Contáctame",
+    "NAME": "Moniicangulo",
+    "LINKEDIN": "Perfil de Linkedin",
+    "DEGREE": "Ing. en Sistemas Computacionales.",
+    "PROFILE": "Desarrollada Frontend."
+  },
+  "FOOTER": {
+    "FOOTER": "Diseñado en Figma, desarrollado con Astro, con ilustraciones de openpeeps.com, textures.com, cosmos.so y alojado en Vercel."
+  }
 }

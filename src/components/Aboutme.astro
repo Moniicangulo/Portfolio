@@ -45,16 +45,19 @@ const { TITLE, SUBTITLE, DESCRIPTION } = i18n.ABOUT_ME;
   }
   }
   @media (max-width: 426px) {
-    .container {
-      flex-direction: column-reverse;
-      gap: 1rem;
-      width: 85%;
-    }
-    .info__container {
-      width: 85%;
-    }
-    .img__container {
-      width: 65%;
+    .container__aboutme{
+      width: 90%;
+      height: auto;
+      text-align: center;
+     &  h2{
+        font-size: 2rem;
+      }
+     & span{
+        font-size: 1.5rem;
+      }
+     & p{
+        font-size: 1rem;
+      }
     }
   }
 </style>
