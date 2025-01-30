@@ -60,6 +60,7 @@ const i18n = geti18n({ currentLocale });
   }
   .img__container {
     object-fit: cover;
+    width: 40%;
     max-width: 500px;
     & img {
       width: 100%;
@@ -96,13 +97,35 @@ const i18n = geti18n({ currentLocale });
       opacity: 0.9;
     }
   }
-
+  @media (max-width: 769px) {
+  #home{
+    gap: 1rem;
+  }
+  .info__container{
+    width: 60%;
+  }
+  .img__container {
+    max-width: 300px;
+  }
+  }
   @media (max-width: 426px) {
     #home {
       flex-direction: column;
     }
     .info__container {
-      width: 85%;
+      text-align: center;
+      width: 100%;
+      & .name {
+        font-size: 2rem;
+      }
+      & .title {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
     }
+    .link__container{
+      justify-content: space-around
+    }
+    
   }
 </style>

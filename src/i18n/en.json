@@ -10,7 +10,7 @@
   "HOME": {
     "NAME": "Hi, I'm Monica",
     "DEGREE": "Computer Systems Engineer",
-    "DESCRIPTION": "As a final-semester student, I have knowledge in programming logic, databases, and frontend development experience, with an interest in UX/UI design. My goal is to contribute to creating intuitive user interfaces and collaborate with multidisciplinary teams in developing innovative solutions.",
+    "DESCRIPTION": "As a Computer Systems Engineer, I have knowledge of programming logic, databases, and experience in frontend development. I am interested in UX/UI design, and my goal is to contribute to the creation of intuitive interfaces while collaborating with multidisciplinary teams to develop innovative solutions.",
     "BUTTON_CV": "See CV",
     "LINK_TO_GITHUB": "Go to Github"
   },
@@ -25,13 +25,13 @@
         "DATE": "August 2020 - December 2024",
         "DESCRIPTION": "I have worked on several school projects where I gained experience using modern technologies. During these projects, I developed logical and communication skills, utilized Agile/Scrum methodologies, and worked on frontend development, databases, and interface design.",
         "TECHNOLOGIES": [
+          "SQL",
+          "Java",
           "Vue.js",
           "React",
           "JavaScript",
           "CSS",
           "HTML5",
-          "SQL",
-          "Java",
           "Ruby on Rails"
         ]
       },
@@ -40,7 +40,16 @@
         "COMPANY": "Kami Electronics",
         "DATE": "May 2024 - October 2024",
         "DESCRIPTION": "Maintenance, code refactoring, and development of new features for the main web application of Kami Electronics, using Scrum methodology for goals.",
-        "TECHNOLOGIES": ["React", "JavaScript", "CSS", "HTML5", "Next.js"]
+        "TECHNOLOGIES": [
+          "React",
+          "JavaScript",
+          "CSS",
+          "HTML5",
+          "Next.js", 
+          "Node.js",
+          "MongoDB",
+          "Docker"
+          ]
       }
     }
   },
@@ -82,5 +91,15 @@
   "SKILLS": {
     "SKILLS": "Skills",
     "TOOLS": "Tools"
+  },
+   "CONTACT_ME": {
+    "TITLE": "Contact Me",
+    "NAME": "Moniicangulo",
+    "LINKEDIN": "Linkedin Profile",
+    "DEGREE": "Computer Systems Engineer.",
+    "PROFILE": "Frontend Developer."
+},
+  "FOOTER": {
+    "FOOTER": "Designed in Figma, developed with Astro, with illustrations from openpeeps.com, textures.com, cosmos.so and hosted on Vercel."
   }
 }

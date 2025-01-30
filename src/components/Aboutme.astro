@@ -2,14 +2,14 @@
 import { geti18n } from "../i18n";
 let { currentLocale } = Astro;
 const i18n = geti18n({ currentLocale });
-const { TITLE, SUBTITLE, DESCRIPTTION } = i18n.ABOUT_ME;
+const { TITLE, SUBTITLE, DESCRIPTION } = i18n.ABOUT_ME;
 ---
 
 <section id="aboutme" class="container__aboutme">
   <h2>{TITLE}</h2>
   <span>{SUBTITLE}</span>
   <p>
-    {DESCRIPTTION}
+    {DESCRIPTION}
   </p>
 </section>
 
@@ -38,17 +38,26 @@ const { TITLE, SUBTITLE, DESCRIPTTION } = i18n.ABOUT_ME;
       font-size: 2rem;
     }
   }
+  @media (max-width: 769px) {
+  .container__aboutme{
+    width: 85%;
+    height: 500px;
+  }
+  }
   @media (max-width: 426px) {
-    .container {
-      flex-direction: column-reverse;
-      gap: 1rem;
-      width: 85%;
-    }
-    .info__container {
-      width: 85%;
-    }
-    .img__container {
-      width: 65%;
+    .container__aboutme{
+      width: 90%;
+      height: auto;
+      text-align: center;
+     &  h2{
+        font-size: 2rem;
+      }
+     & span{
+        font-size: 1.5rem;
+      }
+     & p{
+        font-size: 1rem;
+      }
     }
   }
 </style>

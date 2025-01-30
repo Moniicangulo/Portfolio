@@ -43,21 +43,9 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
     alt=""
     class="img-extras flower-3"
   />
-  <img
-    src="/images/img-extras/leaf-1.png"
-    alt=""
-    class="img-extras leaf-1"
-  />
-  <img
-    src="/images/img-extras/leaf-2.png"
-    alt=""
-    class="img-extras leaf-2"
-  />
-  <img
-    src="/images/img-extras/leaf-3.png"
-    alt=""
-    class="img-extras leaf-3"
-  />
+  <img src="/images/img-extras/leaf-1.png" alt="" class="img-extras leaf-1" />
+  <img src="/images/img-extras/leaf-2.png" alt="" class="img-extras leaf-2" />
+  <img src="/images/img-extras/leaf-3.png" alt="" class="img-extras leaf-3" />
 </section>
 <script>
   document.addEventListener("scroll", () => {
@@ -87,64 +75,61 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
 
 <style>
   .experience__container {
-  background-color: var(--light-green);
-  padding: 8rem;
-  flex-direction: column;
-  gap: 4rem;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-
-  & .subtitle__container {
-    border: 1px solid var(--black);
-    color: var(--white);
-    display: flex;
+    background-color: var(--light-green);
+    padding: var(--padding-desktop);
     flex-direction: column;
-    font-family: "Concert One", sans-serif;
-    font-weight: 400;
-    height: 155px;
+    gap: 4rem;
     justify-content: center;
-    width: 925px;
-    gap: 0.75rem;
-    & h2 {
-      text-transform: uppercase;
-    }
-    & span {
-      font-size: 1.25rem;
-    }
-  }
-
-  .info__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    overflow: hidden;
     position: relative;
-  }
-  
-  .info__container .card__job:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-}
+    width: 100vw;
 
-.center-line {
-  position: absolute; 
-  overflow: hidden;
-  top: 0;
-  left: 50%; 
-  height: 100%; 
-  border: 2px solid var(--dark-green);
-  transform: translateX(-50%);
-}
+    & .subtitle__container {
+      border: 1px solid var(--black);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      font-family: "Concert One", sans-serif;
+      font-weight: 400;
+      height: 155px;
+      justify-content: center;
+      width: 90%;
+      max-width: 925px;
+      gap: 0.75rem;
+      & h2 {
+        text-transform: uppercase;
+      }
+      & span {
+        font-size: 1.25rem;
+      }
+    }
+
+    .info__container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+      align-items: center;
+    }
+
+    .info__container .card__job:nth-child(even) {
+      /* flex-direction: row-reverse; */
+    }
+  }
+
+  .center-line {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border: 2px solid var(--dark-green);
+    transform: translateX(-50%);
+  }
 
   .info__container {
     display: flex;
     flex-direction: column;
-  }
-  @media (max-width: 426px) {
-    .experience__container {
-      width: 85%;
-    }
   }
 
   .img-extras {
@@ -153,14 +138,14 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
     will-change: transform;
   }
   .flower-1 {
-    left: -130px;
-    top: 150px;
-    width: 325px;
+    left: -8%;
+    top: 10%;
+    width: 18%;
   }
   .flower-2 {
-    right: 150px;
-    top: 950px;
-    width: 280px;
+    right: 10%;
+    top: 65%;
+    width: 15%;
   }
   .flower-3 {
     right: 50px;
@@ -168,9 +153,9 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
     width: 180px;
   }
   .leaf-1 {
-    left: 60px;
-    top: 650px;
-    width: 175px;
+    left: 5%;
+    top: 45%;
+    width: 9%;
   }
   .leaf-2 {
     left: 300px;
@@ -178,8 +163,38 @@ const { TITLE, SUBTITLE } = i18n.EXPERIENCE;
     width: 150px;
   }
   .leaf-3 {
-    right: -30px;
-    top: 400px;
-    width: 250px;
+    right: -2%;
+    top: 30%;
+    width: 13%;
+  }
+
+  @media (max-width: 769px) {
+    .experience__container{
+      padding: var(--padding-mobile);
+    }
+    .leaf-1 {
+    left: 1%;
+  }
+  .leaf-3 {
+    right: -4%;
+  }
+  }
+  @media (max-width: 426px) {
+    .experience__container {
+      width: 100%;
+      
+    & .subtitle__container{
+     & h2{
+      font-size: 2rem;
+     }
+      & span {
+        font-size: 1rem;
+        font-weight: 200;
+     }
+    }
+    }
+    .center-line{
+      display: none;
+    }
   }
 </style>

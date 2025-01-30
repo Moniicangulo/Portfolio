@@ -25,7 +25,7 @@ import Aboutme from "./Aboutme.astro";
         justify-content: center;
         background-image: url(/public/images/bg-aboutme.png);
         width: 100vw;
-        padding: 8rem;
+        padding: var(--padding-desktop);
         position: relative;
     }
     .img-extras {
@@ -69,4 +69,20 @@ import Aboutme from "./Aboutme.astro";
     right: 90px;
   }
 
+
+  @media (max-width: 769px) {
+    .container{
+      flex-direction: column;
+      padding: 3rem var(--padding-mobile);
+      gap: 3rem;
+
+    }
+    img{
+      display: none;
+
+    }
+  }
+  @media (max-width: 426px) {
+ 
+  }
 </style>
