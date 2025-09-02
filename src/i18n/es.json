@@ -19,6 +19,31 @@
     "SUBTITLE": "Donde he perfeccionado mis habilidades",
     "TECHNOLOGIES_TITLE": "Tecnologías",
     "JOBS": {
+      "FULLSTACK_DEVELOPER": {
+        "JOB": "Fullstack Developer",
+        "COMPANY": "Majasportswear",
+        "DATE": "February 2025 - Present",
+        "DESCRIPTION": "Desarrollo de un sistema ERP web para la empresa, con énfasis en la capa frontend, creando interfaces modernas, responsivas y fáciles de usar que mejoran la experiencia del usuario. Apoyo en tareas de backend cuando es requerido, contribuyendo a la optimización y eficiencia de los procesos internos.",
+        "TECHNOLOGIES": [
+          "Angular",
+          "Typescript",
+          "Django",
+          "CSS",
+          "HTML5",
+          "Docker",
+          "Git"
+        ]
+      },
+      "KAMI_TRAINER": {
+        "JOB": "Frontend Developer Intern",
+        "COMPANY": "Kami Electronics",
+        "DATE": "Mayo 2024 - Octubre 2024",
+        "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
+        "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js",
+          "Node.js",
+          "MongoDB",
+          "Docker"]
+      },
       "STUDENT": {
         "JOB": "Estudiante",
         "COMPANY": "Instituto Tecnológico de Culiacán",
@@ -34,16 +59,6 @@
           "HTML5",
           "Ruby on Rails"
         ]
-      },
-      "KAMI_TRAINER": {
-        "JOB": "Frontend Developer Intern",
-        "COMPANY": "Kami Electronics",
-        "DATE": "Mayo 2024 - Octubre 2024",
-        "DESCRIPTION": "Mantenimiento, refactorización de código y desarrollo de nuevas funcionalidades para la aplicación web principal de Kami Electronics, utilizando la metodología Scrum para objetivos.",
-        "TECHNOLOGIES": ["React", "Javascript", "CSS", "HTML5", "Next.js",
-          "Node.js",
-          "MongoDB",
-          "Docker"]
       }
     }
   },

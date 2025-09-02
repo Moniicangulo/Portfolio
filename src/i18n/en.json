@@ -19,20 +19,19 @@
     "SUBTITLE": "Where I've Honed My Skills",
     "TECHNOLOGIES_TITLE": "Technologies",
     "JOBS": {
-      "STUDENT": {
-        "JOB": "Student",
-        "COMPANY": "Instituto Tecnológico de Culiacán",
-        "DATE": "August 2020 - December 2024",
-        "DESCRIPTION": "I have worked on several school projects where I gained experience using modern technologies. During these projects, I developed logical and communication skills, utilized Agile/Scrum methodologies, and worked on frontend development, databases, and interface design.",
+      "FULLSTACK_DEVELOPER": {
+        "JOB": "Fullstack Developer",
+        "COMPANY": "Majasportswear",
+        "DATE": "February 2025 - Present",
+        "DESCRIPTION": "Development of a web ERP system for the company, focusing on the frontend layer, creating modern, responsive, and easy-to-use interfaces that improve the user experience. Support in backend tasks when required, contributing to the optimization and efficiency of internal processes.",
         "TECHNOLOGIES": [
-          "SQL",
-          "Java",
-          "Vue.js",
-          "React",
-          "JavaScript",
+          "Angular",
+          "Typescript",
+          "Django",
           "CSS",
           "HTML5",
-          "Ruby on Rails"
+          "Docker",
+          "Git"
         ]
       },
       "KAMI_TRAINER": {
@@ -50,6 +49,21 @@
           "MongoDB",
           "Docker"
           ]
+      },"STUDENT": {
+        "JOB": "Student",
+        "COMPANY": "Instituto Tecnológico de Culiacán",
+        "DATE": "August 2020 - December 2024",
+        "DESCRIPTION": "I have worked on several school projects where I gained experience using modern technologies. During these projects, I developed logical and communication skills, utilized Agile/Scrum methodologies, and worked on frontend development, databases, and interface design.",
+        "TECHNOLOGIES": [
+          "SQL",
+          "Java",
+          "Vue.js",
+          "React",
+          "JavaScript",
+          "CSS",
+          "HTML5",
+          "Ruby on Rails"
+        ]
       }
     }
   },
